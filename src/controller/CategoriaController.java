@@ -27,7 +27,7 @@ public class CategoriaController {
 		AbstractApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");	
 		CategoriaDao beanCategoriaDao=(CategoriaDao) context.getBean("categoriaDaoImpl");
 		ArticoloDao  beanArticoloDao=(ArticoloDao) context.getBean("articoloDaoImpl");
-		
+		//prova git
 		@RequestMapping("/template")
 		@GET
 		public String template(){			
