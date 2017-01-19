@@ -1,0 +1,55 @@
+@CHARSET "UTF-8";
+.styleShow a {
+  						font-family: Arial, Helvetica, sans-serif;
+  					 	font-size: 80%;
+  					 	color: #FFFFFF;
+  					 	text-decoration: none;
+  					}
+  					
+  	.styleShow body {
+  							background: #008ed5;
+  						 }
+  						 	
+  	.styleShow p {
+  						font-family: Arial, Helvetica, sans-serif;
+  						font-size: 80%;
+  						color: #FFFFFF;  						
+  				  }		
+  				  
+  	.styleShow h1 {
+  						font-family: Arial, Helvetica, sans-serif, bold;
+  						font-size: 120%;
+  						color: #FFFFFF;  						
+  				  }
+  	 
+  	 .styleShow table {
+  	 			  						width: 100%;
+  	 			  						border-collapse: collapse;
+  	 			  					}
+  	 .styleShow th {
+  									padding-top: 12px;
+    								padding-bottom: 12px;
+    								text-align: left;
+    								background-color: #9c9c9c;
+    								color: white;
+    								border: 1px solid #ddd;
+    								padding: 8px;
+    								font-family: bold;
+  									} 
+  		.styleShow tr:hover {background-color: #70a0c7;}							
+  									 	  
+  		.styleShow tr {
+  									padding-top: 12px;
+    								padding-bottom: 12px;
+    								text-align: left;
+    								background-color: #4682b4;
+    								color: white;
+    								border: 1px solid #ddd;
+    								padding: 8px;
+  									}
+  									
+  		.styleShow td {  									
+    									border: 1px solid #ddd;
+    									padding: 8px;
+  									}	   
+  	

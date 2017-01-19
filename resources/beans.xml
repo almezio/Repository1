@@ -1,0 +1,36 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+	     xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+    <!-- Needed for Autowiring -->
+  <context:annotation-config/>
+  
+  <!-- Oracle DataSource -->
+  <bean id="dataSource" class="oracle.jdbc.pool.OracleDataSource">
+  	<property name="URL" value="jdbc:oracle:thin:@server_oraclelinux:1521:pdb1" />
+    <property name="user" value="BET" />
+    <property name="password" value="BET" />
+  </bean>
+  
+  <!-- Hibernate SessionFactory -->
+  <bean id="sessionFactory" class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean">
+  	<property name="dataSource" ref="dataSource" />
+    <property name="packagesToScan" value="entities"/>
+    <property name="hibernateProperties">
+    	<value>
+      	hibernate.hbm2ddl.auto=update
+        hibernate.dialect=org.hibernate.dialect.OracleDialect
+        hibernate.current_session_context_class=thread
+      </value>
+    </property>
+	</bean>
+  
+	<!-- Java Bean -->
+  <bean id="categoriaDaoImpl" class="model.CategoriaDaoImpl" />
+  <bean id="articoloDaoImpl" class="model.ArticoloDaoImpl" />
+  
+</beans>

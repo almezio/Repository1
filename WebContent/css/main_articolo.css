@@ -1,0 +1,27 @@
+@CHARSET "UTF-8";
+	.styleMainArticolo h1 {
+									 				font-family: Arial, Helvetica, sans-serif, bold;
+  								 				font-size: 120%;
+  								 				color: #FFFFFF;  						
+  			  							}
+	
+	.styleMainArticolo p {
+  											font-family: Arial, Helvetica, sans-serif, bold;
+  											font-size: 80%;
+  											color: #FFFFFF;  						
+  				  		 			}
+  				  		 
+  .styleMainArticolo table {
+  													cellpadding: 2;
+  													cellspacing: 2;  	
+  													border-collapse: collapse;										
+  									 			 }	
+  									 		  		 
+  .styleMainArticolo td {
+  												padding-top: 12px;
+    											padding-bottom: 12px;
+    											text-align: left;
+    											color: white;
+    											padding: 8px;
+    											border: 1px solid black;
+  											} 

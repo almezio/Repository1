@@ -1,0 +1,11 @@
+@CHARSET "UTF-8";
+	.styleMenu a {
+	  						font-family: Arial, Helvetica, sans-serif;
+	  					 	font-size: 80%;
+	  					 	color: #FFFFFF;
+	  					 	text-decoration: none;
+  						 }
+  					
+	.styleMenu a:hover {
+  										 color: #cfd90a;
+  									 }	

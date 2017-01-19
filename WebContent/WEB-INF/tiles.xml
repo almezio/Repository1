@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+  <definition name="template" template="/WEB-INF/jsp/template.jsp">
+  	<put-attribute name="title" value="" />
+  	<put-attribute name="header" value="/WEB-INF/jsp/header.jsp" />
+  	<put-attribute name="menu" value="/WEB-INF/jsp/menu.jsp" />
+    <put-attribute name="footer" value="/WEB-INF/jsp/footer.jsp" />
+  </definition>
+  <definition name="index" extends="template">
+    <put-attribute name="title" value="Pagina iniziale" />
+    <put-attribute name="body" value="/WEB-INF/jsp/home.jsp" />    
+  </definition>
+  <definition name="main_categoria" extends="template">
+  	<put-attribute name="title" value="Pagina di main categoria" />
+    <put-attribute name="body" value="/WEB-INF/jsp/main_categoria.jsp" />
+  </definition>
+  <definition name="main_articolo" extends="template">
+  	<put-attribute name="title" value="Pagina di main articolo" />
+    <put-attribute name="body" value="/WEB-INF/jsp/main_articolo.jsp" />
+  </definition>
+  <definition name="main_ricercaArticolo" extends="template">
+  	<put-attribute name="title" value="Pagina di ricerca articoli" />
+    <put-attribute name="body" value="/WEB-INF/jsp/main_ricercaArticolo.jsp" />
+  </definition>
+  <definition name="message" extends="template">
+  	<put-attribute name="title" value="Pagina di message" />
+    <put-attribute name="body" value="/WEB-INF/jsp/message.jsp" />
+  </definition>
+  <definition name="show" extends="template">
+  	<put-attribute name="title" value="Pagina di message" />
+    <put-attribute name="body" value="/WEB-INF/jsp/show.jsp" />
+  </definition>
+  <definition name="show_articoli" extends="template">
+  	<put-attribute name="title" value="Pagina di message" />
+    <put-attribute name="body" value="/WEB-INF/jsp/show_articoli.jsp" />
+  </definition>
+</tiles-definitions>
